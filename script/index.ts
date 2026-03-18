@@ -36,7 +36,8 @@ const parcelPicker = () => {
   heading.innerText = 'Driver Game'
 
   const fieldset = document.createElement('fieldset')
-  fieldset.classList.add('flex', 'flex-dir-col')
+  fieldset.style.display = 'flex'
+  fieldset.style.flexDirection = 'column'
   const legend = document.createElement('legend')
   legend.innerText = 'Color'
   fieldset.appendChild(legend)
@@ -91,12 +92,14 @@ const parcelPicker = () => {
   labelLights.prepend(inputLights)
 
   const score = document.createElement('div')
+  score.classList.add('parcel-score')
   const scoreSpan = document.createElement('span')
   score.innerText = 'Parcels: '
   scoreSpan.innerText = `${parcelScore}`
   score.appendChild(scoreSpan)
 
   const highscoreContainer = document.createElement('div')
+  highscoreContainer.classList.add('parcel-highscore')
   const highscoreSpan = document.createElement('span')
   highscoreContainer.innerText = 'Highscore: '
   highscoreSpan.innerText = `${gameOptions.highScore}`
@@ -112,8 +115,9 @@ const parcelPicker = () => {
   })
 
   const truck = document.createElement('div')
-  truck.classList.add('truck','absolute')
+  truck.classList.add('truck')
   gameOptions.lightsOn && truck.classList.add('truck-lights')
+  truck.style.position = 'absolute'
   truck.style.backgroundColor = gameOptions.color
   truck.style.width = `${gameOptions.size}px`
   truck.style.aspectRatio = '2/4'
