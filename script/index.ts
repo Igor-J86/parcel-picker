@@ -179,7 +179,7 @@ const parcelPicker = () => {
         parcel.style.backgroundColor = 'oklch(0.7 0.1 220)'
       }
       parcel.style.left = Math.random() * window.innerWidth + 'px'
-      parcel.style.top = Math.random() * document.documentElement.scrollHeight + 'px'
+      parcel.style.top = Math.random() * window.innerHeight + 'px'
       parcel.style.rotate = Math.random() * 360 + 'deg'
       parcel.style.width = Math.random() * 20 + 10 + 'px'
       parcel.style.height = Math.random() * 20 + 10 + 'px'
