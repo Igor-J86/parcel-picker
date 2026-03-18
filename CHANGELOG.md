@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Igor-J86/parcel-picker/compare/v1.0.1...v1.0.2) (2026-03-18)
+
+
+### Bug Fixes
+
+* adjust classes and update readme ([b272070](https://github.com/Igor-J86/parcel-picker/commit/b272070f49938ac40d2692253318cc15ff1b7c36))
+
 ## [1.0.1](https://github.com/Igor-J86/parcel-picker/compare/v1.0.0...v1.0.1) (2026-03-18)
 
 
