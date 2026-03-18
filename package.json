@@ -1,0 +1,60 @@
+{
+  "name": "@igor-j86/parcel-picker",
+  "version": "0.0.1",
+  "description": "A driver gamer for picking up parcels.",
+  "keywords": [
+    "game",
+    "driver",
+    "parcel",
+    "pickup"
+  ],
+  "type": "module",
+  "module": "./dist/parcel-picker.js",
+  "main": "./dist/parcel-picker.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/parcel-picker.js",
+      "require": "./dist/parcel-picker.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Igor-J86/parcel-picker.git"
+  },
+  "author": "Igor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Igor-J86/parcel-picker/issues"
+  },
+  "homepage": "https://github.com/Igor-J86/parcel-picker#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest",
+    "access": "public"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.6",
+    "@semantic-release/npm": "^12.0.2",
+    "@types/node": "^24.10.2",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "semantic-release": "^24.2.9",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.0"
+  }
+}
