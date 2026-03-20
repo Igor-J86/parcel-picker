@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/Igor-J86/parcel-picker/compare/v1.0.3...v1.0.4) (2026-03-20)
+
+
+### Bug Fixes
+
+* remove box-shadow from vehicle ([483c6c2](https://github.com/Igor-J86/parcel-picker/commit/483c6c2b7a43b388844b770f4a26468aeaa30d76))
+
 ## [1.0.3](https://github.com/Igor-J86/parcel-picker/compare/v1.0.2...v1.0.3) (2026-03-20)
 
 
