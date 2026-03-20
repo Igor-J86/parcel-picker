@@ -127,7 +127,6 @@ const parcelPicker = () => {
   truck.style.zIndex = '999'
   truck.style.borderRadius = '10px'
   truck.style.border = '1px solid black'
-  truck.style.boxShadow = '0 3px 4px oklch(0.2 0 0 / 0.6)'
 
   const styling = document.createElement('style')
   styling.innerText = `
