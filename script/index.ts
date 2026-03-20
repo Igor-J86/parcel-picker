@@ -126,6 +126,8 @@ const parcelPicker = () => {
   truck.style.transformOrigin = '50% 25%'
   truck.style.zIndex = '999'
   truck.style.borderRadius = '10px'
+  truck.style.border = '1px solid black'
+  truck.style.boxShadow = '0 3px 4px oklch(0.2 0 0 / 0.6)'
 
   const styling = document.createElement('style')
   styling.innerText = `
@@ -178,6 +180,7 @@ const parcelPicker = () => {
       parcel.style.position = 'absolute'
       parcel.style.zIndex = '998'
       parcel.style.boxShadow = '0 3px 4px oklch(0.2 0 0 / 0.6)'
+      parcel.style.border = '1px solid black'
       if (!onlyPB && i < Math.floor(Math.random() * 7)) {
         parcel.classList.add('wrong')
         parcel.style.backgroundColor = 'oklch(0.7 0.1 220)'
