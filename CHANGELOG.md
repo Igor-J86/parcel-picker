@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Igor-J86/parcel-picker/compare/v1.0.2...v1.0.3) (2026-03-20)
+
+
+### Bug Fixes
+
+* add border to vehicle and parcels ([4fe9fb3](https://github.com/Igor-J86/parcel-picker/commit/4fe9fb3f803947bdd5393bf96d7a83a45a3c4c12))
+
 ## [1.0.2](https://github.com/Igor-J86/parcel-picker/compare/v1.0.1...v1.0.2) (2026-03-18)
 
 
