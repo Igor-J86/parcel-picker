@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/Igor-J86/parcel-picker/compare/v1.0.5...v1.0.6) (2026-03-26)
+
+
+### Bug Fixes
+
+* make body shake on wrong parcel picked up ([16823fd](https://github.com/Igor-J86/parcel-picker/commit/16823fda7a46f9d3c0ea541e50d31cfc7c35c93a))
+
 ## [1.0.5](https://github.com/Igor-J86/parcel-picker/compare/v1.0.4...v1.0.5) (2026-03-26)
 
 
