@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/Igor-J86/parcel-picker/compare/v1.0.4...v1.0.5) (2026-03-26)
+
+
+### Bug Fixes
+
+* adjust control labels and classes + make body not overflow ([131f5f0](https://github.com/Igor-J86/parcel-picker/commit/131f5f01849f9160dc7790123396d76c6c847635))
+
 ## [1.0.4](https://github.com/Igor-J86/parcel-picker/compare/v1.0.3...v1.0.4) (2026-03-20)
 
 
