@@ -137,6 +137,18 @@ const parcelPicker = () => {
       margin: 0;
       height: 100vh;
     }
+    body.shake {
+      animation: shake 0.5s;
+    }
+    
+    @keyframes shake {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(-3px, -3px); }
+      50% { transform: translate(3px, 3px); }
+      75% { transform: translate(-3px, -3px); }
+      100% { transform: translate(0, 0); }
+    }
+    
     .truck {
       &::before {
         content: '';
@@ -265,10 +277,15 @@ const parcelPicker = () => {
       parcelsResetBtn.disabled = el.classList.length === 1
       if (isTouching(truck, el)) {
         if (el.classList.contains('wrong')) {
+          document.body.classList.add('shake')
+          setTimeout(() => {
+            document.body.classList.remove('shake')
+          }, 500)
           createParcels(true, parcelScore)
           parcelScore = 0
           scoreSpan.innerText = `${parcelScore}`
         } else {
+          parcelsResetBtn.disabled = false
           parcelScore++
           scoreSpan.innerText = `${parcelScore}`
           gameOptions.highScore = parcelScore > gameOptions.highScore ? parcelScore : gameOptions.highScore
