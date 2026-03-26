@@ -33,7 +33,7 @@ const parcelPicker = () => {
 
   const heading = document.createElement('h2')
   heading.classList.add('text-1.25r')
-  heading.innerText = 'Driver Game'
+  heading.innerText = 'Parcel Picker'
 
   const fieldset = document.createElement('fieldset')
   fieldset.style.display = 'flex'
@@ -92,21 +92,23 @@ const parcelPicker = () => {
   labelLights.prepend(inputLights)
 
   const score = document.createElement('div')
-  score.classList.add('parcel-score')
+  score.classList.add('parcel-score', 'text-1.25r')
   const scoreSpan = document.createElement('span')
   score.innerText = 'Parcels: '
+  scoreSpan.classList.add('fwb')
   scoreSpan.innerText = `${parcelScore}`
   score.appendChild(scoreSpan)
 
   const highscoreContainer = document.createElement('div')
-  highscoreContainer.classList.add('parcel-highscore')
+  highscoreContainer.classList.add('parcel-highscore', 'text-1.25r')
   const highscoreSpan = document.createElement('span')
   highscoreContainer.innerText = 'Highscore: '
+  highscoreSpan.classList.add('fwb')
   highscoreSpan.innerText = `${gameOptions.highScore}`
   highscoreContainer.appendChild(highscoreSpan)
 
   const parcelsResetBtn = document.createElement('button')
-  parcelsResetBtn.classList.add('btn', 'btn--green')
+  parcelsResetBtn.classList.add('btn', 'btn--green', 'mtm', 'w-auto')
   parcelsResetBtn.innerText = 'Get parcels'
   parcelsResetBtn.addEventListener('click', () => {
     gameOptions.parcels = Math.floor(Math.random() * 10 + 5)
@@ -130,35 +132,40 @@ const parcelPicker = () => {
 
   const styling = document.createElement('style')
   styling.innerText = `
-      .truck {
-        &::before {
-          content: '';
-          top: calc(100% / 6);
-          left: 50%;
-          position: absolute;
-          width: calc(100% - 8px);
-          height: calc(100% / 5);
-          background: oklch(0.4 0 0);
-          transform: translateX(-50%);
-          border-radius: 3px;
-        }
-        &::after {
-          content: '';
-          bottom: 5px;
-          left: 50%;
-          position: absolute;
-          width: calc(100% - 8px);
-          height: calc(100% / 20);
-          background: oklch(0.4 0 0);
-          transform: translateX(-50%);
-          border-radius: 3px;
-        }
-        &.truck-lights {
-          box-shadow:
-            0 calc(-100px * 2) 65px 20px oklch(1 1 115 / 0.3),
-            0 calc(-100px * 3) 100px 20px oklch(1 1 115 / 0.1);
-        }
-      }`
+    html, body {
+      overflow: hidden;
+      margin: 0;
+      height: 100vh;
+    }
+    .truck {
+      &::before {
+        content: '';
+        top: calc(100% / 6);
+        left: 50%;
+        position: absolute;
+        width: calc(100% - 8px);
+        height: calc(100% / 5);
+        background: oklch(0.4 0 0);
+        transform: translateX(-50%);
+        border-radius: 3px;
+      }
+      &::after {
+        content: '';
+        bottom: 5px;
+        left: 50%;
+        position: absolute;
+        width: calc(100% - 8px);
+        height: calc(100% / 20);
+        background: oklch(0.4 0 0);
+        transform: translateX(-50%);
+        border-radius: 3px;
+      }
+      &.truck-lights {
+        box-shadow:
+          0 calc(-100px * 2) 65px 20px oklch(1 1 115 / 0.3),
+          0 calc(-100px * 3) 100px 20px oklch(1 1 115 / 0.1);
+      }
+    }`
 
   controlDiv.appendChild(heading)
   controlDiv.appendChild(fieldset)
